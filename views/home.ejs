@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="/javascripts/Chart.js"></script>
+    <link rel='stylesheet' href="/stylesheets/bootstrap.css"/>
+    <link rel='stylesheet' href="/stylesheets/window.css"/>
+  </head>
+  
+
+  <body bgcolor="#FFFFFF">
+	<ol class="breadcrumb">
+  		<li><a href="#">Home</a></li>
+  		<li class="active">Dashboard</li>
+	</ol>	
+	
+	<div id="canvas-holder">
+		<canvas id="chart-area" width="400" height="400" style="padding:50px;margin-left:130px;max-height:300px;max-width:300px;"/>
+	</div>
+
+	<script>
+		var doughnutData = [
+			{
+				value: 7.9,
+				color: "#0099FF",
+				highlight: "#0099FF",
+				label: "pH"
+			},
+			{
+				value: 6.4,
+				color: "#DDDDDD",
+				highlight: "#DDDDDD",
+				label : ""
+			}
+		];
+		
+		window.onload = function(){
+			var ctx = document.getElementById("chart-area").getContext("2d");
+			window.myDoughnut = new Chart(ctx).Doughnut(doughnutData, {responsive: true, animation: true, percentageInnerCutout: 90});	
+		};
+
+	</script>
+
+
+
+
+	<br><br>
+	<div class="btn-group btn-group-justified" style="width:90%;margin-left:auto;margin-right:auto;">
+	  <div class="btn-group">
+	    <a href="/p/graphs"><button type="button" class="btn btn-default" style="position:absolute;min-height:180px;">pH<br><h1 id="ph">7.6</h1></button></a>
+	  </div>
+	  <div class="btn-group">
+	    <a href="/p/graphs"><button type="button" class="btn btn-default" style="position:absolute;min-height:180px;">Temperature<br><h1 id="temp">21.5°C</h1></button></a>
+	  </div>
+	  <div class="btn-group">
+	    <a href="/p/graphs"><button type="button" class="btn btn-default" style="position:absolute;min-height:180px;">Salinity<br><h1 id="salinity">15200ppm</h1></button></a>
+	  </div>
+	  <div class="btn-group">
+	    <a href="/p/graphs"><button type="button" class="btn btn-default" style="position:absolute;min-height:180px;">DO<br><h1 id="DO">13.54mg/L</button></a>
+	  </div>
+	</div>
+
+
+  </body>
+</html>

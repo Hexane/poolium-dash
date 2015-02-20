@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel='stylesheet' href="/stylesheets/bootstrap.css"/>
+    <link rel='stylesheet' href="/stylesheets/window.css"/>
+
+  </head>
+  <body>
+	<ol class="breadcrumb">
+  		<li><a href="#">Home</a></li>
+                <li><a href="#">Settings</a></li>  
+		<li class="active">System</li>
+	</ol>	
+	<div style="margin:5px;">
+	<div class="alert alert-success" role="alert"><b>Awesome! </b>Settings saved successfully!</div>	
+	
+	Units:           <div class="btn-group">
+  	<button type="button" class="btn btn-default active">Celsius</button>
+  	<button type="button" class="btn btn-default">Farenheit</button>
+	<br><br><br>
+	pH Serial Device:
+	<div class="input-group">
+  	<span class="input-group-addon">/dev/</span>
+  	<input type="text" class="form-control" placeholder="ttyAMA0" style="max-width:450px;">
+	</div>
+	<br>
+	Temperature Serial Device:
+	<div class="input-group">
+  	<span class="input-group-addon">/dev/</span>
+  	<input type="text" class="form-control" placeholder="ttyUSB0" style="max-width:450px;">
+	</div>
+	<br>
+        pH Warning Trigger:
+        <div class="input-group" style="max-width:500px;">
+                <span class="input-group-addon">pH</span>
+                <input type="text" class="form-control" placeholder="7.6">
+        </div>
+        <br>
+        Temperature Warning Trigger:
+        <div class="input-group" style="max-width:500px;">
+                <span class="input-group-addon">°C</span>
+                <input type="text" class="form-control" placeholder="30">
+        </div>
+        <br>
+        Salinity Warning Trigger:
+        <div class="input-group" style="max-width:500px;">
+                <span class="input-group-addon">ppm</span>
+                <input type="text" class="form-control" placeholder="10000">
+        </div>
+        <br>
+        Dissolved Oxygen Warning Trigger:
+        <div class="input-group" style="max-width:500px;">
+                <span class="input-group-addon">mg/L</span>
+                <input type="text" class="form-control" placeholder="7.45">
+        </div>
+
+
+
+
+
+
+	</div>
+	</div>
+
+
+
+
+
+
+	
+	<div class="buttonanchor">
+	<button type="button" class="btn btn-primary" data-toggle="dropdown">
+        Update Poolium
+        </button>	
+	<button type="button" class="btn btn-success" data-toggle="dropdown">
+	Save
+	</button>
+	<button type="button" class="btn btn-danger" data-toggle="dropdown">
+        Cancel
+        </button>
+	</div>
+
+  </body>
+</html>

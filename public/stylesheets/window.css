@@ -1,0 +1,26 @@
+.buttonanchor {
+  position:absolute;
+  bottom:20px;
+  right:20px;
+}
+
+#calendar {
+  max-width: 1000px;
+/*  margin: 0 auto; */
+}
+
+#ph {
+  color:#d53f3f;
+}
+
+#temp {
+  color:#d6b400;
+}
+
+#salinity {
+  color:#03aa03;
+}
+
+#DO {
+  color:#1e90ff;
+}

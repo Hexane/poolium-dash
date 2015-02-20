@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="/javascripts/Chart.js"></script>
+	<link rel='stylesheet' href="/stylesheets/bootstrap.css"/>
+	<link rel='stylesheet' href="/stylesheets/window.css"/>
+  </head>
+  <body bgcolor="#FFFFFF">
+	<ol class="breadcrumb">
+  		<li><a href="#">Home</a></li>
+  		<li class="active">Dashboard</li>
+	</ol>	
+	
+	
+	<div style="padding-top:10px" padding-bottom:600px;">
+		<canvas id="canvas" height="200" width="600"></canvas>
+	</div>
+	<script src="/javascripts/Main.js"></script>
+	<br><br>
+	<div class="btn-group btn-group-justified" style="width:90%;margin-left:auto;margin-right:auto;">
+	  <div class="btn-group">
+	    <button type="button" class="btn btn-default" style="position:absolute;min-height:180px;">pH<br><h1 id="ph">7.6</h1></button>
+	  </div>
+	  <div class="btn-group">
+	    <button type="button" class="btn btn-default" style="position:absolute;min-height:180px;">Temperature<br><h1 id="temp">21.5°C</h1></button>
+	  </div>
+	  <div class="btn-group">
+	    <button type="button" class="btn btn-default" style="position:absolute;min-height:180px;">Salinity<br><h1 id="salinity">15200ppm</h1></button>
+	  </div>
+	  <div class="btn-group">
+	    <button type="button" class="btn btn-default" style="position:absolute;min-height:180px;">DO<br><h1 id="DO">13.54mg/L</button>
+	  </div>
+	</div>
+
+
+  </body>
+</html>

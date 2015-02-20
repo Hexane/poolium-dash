@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel='stylesheet' href="/stylesheets/bootstrap.css"/>
+    <link rel='stylesheet' href="/stylesheets/window.css"/>
+  </head>
+  <body>
+	<ol class="breadcrumb">
+  		<li><a href="#">Home</a></li>
+                <li><a href="#">Settings</a></li>  
+		<li class="active">Calibration</li>
+	</ol>	
+	<div style="margin:5px;">
+	<div class="alert alert-success" role="alert"><b>Awesome! </b>Settings saved successfully!</div>	
+
+	pH Calibration Point:	
+        <div class="btn-group btn-group-justified" style="width:20%;">
+         <div class="btn-group">
+           <button type="button" class="btn btn-default">3.0</button>
+         </div>
+         <div class="btn-group">
+           <button type="button" class="btn btn-default active">7.0</button>
+         </div>
+         <div class="btn-group">
+           <button type="button" class="btn btn-default">12.0</button>
+         </div>
+	</div>
+	<br>
+	Manual pH Calibration:
+	<div class="input-group">
+  	<span class="input-group-addon">pH</span>
+  	<input type="text" style="max-width:500px;" class="form-control" placeholder="7.0">
+	</div>
+	<br>
+	Manual Temperature Calibration:
+        <div class="input-group">
+        <span class="input-group-addon">°C</span>
+        <input type="text" style="max-width:500px;" class="form-control" placeholder="20">
+        </div>
+	<br>
+	Manual Salinity Calibration:
+        <div class="input-group">
+        <span class="input-group-addon">ppm</span>
+        <input type="text" style="max-width:490px;" class="form-control" placeholder="10000">
+        </div>
+	<br>
+        Manual Dissolved Oxygen Calibration:
+        <div class="input-group">
+        <span class="input-group-addon">mg/l</span>
+        <input type="text" style="max-width:490px;" class="form-control" placeholder="8.45">
+        </div>
+
+	
+
+
+
+	</div>
+
+	<div class="buttonanchor">
+	<button type="button" class="btn btn-success" data-toggle="dropdown">
+	Save
+	</button>
+	<button type="button" class="btn btn-danger" data-toggle="dropdown">
+        Cancel
+        </button>
+	</div>
+  </body>
+</html>

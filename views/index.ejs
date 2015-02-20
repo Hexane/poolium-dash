@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <script src="../public/javascripts/Chart.js"></script>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <img src="../public/images/logo.png" class="title"/>
+  </head>
+  <body>
+	<center><h1>7 Day Overview</h1></center>
+	<div style="opacity: 1; padding-top:10px">
+		<canvas id="canvas" height="200" width="600"></canvas>
+	</div>
+	<script src="../javascripts/Main.js"></script>
+
+	<aside class="sidebar" id="sidebar">
+	<ul>Dashboard</ul>
+	<hr>
+	    <li><a href="">Graphs</a></li>
+	    <li><a href="">Tables</a></li>
+	    <li><a href="">Readings</a></li>
+	    <li><a href="">Schedule</a></li>
+	<hr>
+	<ul>Settings</ul>
+	<hr>
+	    <li><a href="">System</a></li>
+	    <li><a href="">Calibration</a></li>
+	    <li><a href="">Notifications</a></li>
+	<hr>
+	<ul>Misc</ul>
+	<hr>
+	    <li><a href="">Information</a></li>
+	    <li><a href="">Licensing</a></li>
+	    <li><a href="">Credits</a></li>
+	</aside>
+<table width="100%" border="1">
+  <tr>
+    <td>Current Temperature</td>
+    <td>Current pH</td>
+    <td>Current Salinity</td>
+    <td>Current Dissolved Oxygen</td>
+  </tr>
+</table>
+  </body>
+</html>

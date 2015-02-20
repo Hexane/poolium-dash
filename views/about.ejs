@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <img src="../images/logo.png" class="title"/>
+  </head>
+  <body>
+
+	<aside class="sidebar" id="sidebar">
+	<ul>General / Dashboard</ul>
+	<hr>
+	    <li><a href="graphs.php">Graphs</a></li>
+	    <li><a href="tables.php">Tables</a></li>
+	    <li><a href="readings.php">Readings</a></li>
+	    <li><a href="schedule.php">Schedule</a></li>
+	<hr>
+	<ul>Settings</ul>
+	<hr>
+	    <li><a href="settings.php">System</a></li>
+	    <li><a href="calibration.php">Calibration</a></li>
+	    <li><a href="notifications.php">Notifications</a></li>
+	<hr>
+	<ul>Misc</ul>
+	<hr>
+	    <li><a href="about.php">About</a></li>
+	    <li><a href="licensing.php">Licensing</a></li>
+	    <li><a href="credits.php">Credits</a></li>
+	</aside>
+
+    <h1>About</h1>
+    <p class="information">
+    	Poolium Frontend Redux: <i>1.0.00</i><br>
+    	Poolium Backend: <i>1.0.00</i><br>
+    	Node Version: <i><%= shownode %></i><br>
+    	Kernel Version: <i><%= kernel %></i>
+    </p>
+  </body>
+</html>
